@@ -1,0 +1,20 @@
+<https://preston.guoda.bio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#SoftwareAgent> <urn:uuid:302aa7d8-d4ca-40c8-ab95-b79d42f9e73f> .
+<https://preston.guoda.bio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> <urn:uuid:302aa7d8-d4ca-40c8-ab95-b79d42f9e73f> .
+<https://preston.guoda.bio> <http://purl.org/dc/terms/description> "Preston is a software program that finds, archives and provides access to biodiversity datasets."@en <urn:uuid:302aa7d8-d4ca-40c8-ab95-b79d42f9e73f> .
+<urn:uuid:302aa7d8-d4ca-40c8-ab95-b79d42f9e73f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> <urn:uuid:302aa7d8-d4ca-40c8-ab95-b79d42f9e73f> .
+<urn:uuid:302aa7d8-d4ca-40c8-ab95-b79d42f9e73f> <http://purl.org/dc/terms/description> "A crawl event that discovers biodiversity archives."@en <urn:uuid:302aa7d8-d4ca-40c8-ab95-b79d42f9e73f> .
+<urn:uuid:302aa7d8-d4ca-40c8-ab95-b79d42f9e73f> <http://www.w3.org/ns/prov#startedAtTime> "2024-06-25T15:15:35.035Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> <urn:uuid:302aa7d8-d4ca-40c8-ab95-b79d42f9e73f> .
+<urn:uuid:302aa7d8-d4ca-40c8-ab95-b79d42f9e73f> <http://www.w3.org/ns/prov#wasStartedBy> <https://preston.guoda.bio> <urn:uuid:302aa7d8-d4ca-40c8-ab95-b79d42f9e73f> .
+<https://doi.org/10.5281/zenodo.1410543> <http://www.w3.org/ns/prov#usedBy> <urn:uuid:302aa7d8-d4ca-40c8-ab95-b79d42f9e73f> <urn:uuid:302aa7d8-d4ca-40c8-ab95-b79d42f9e73f> .
+<https://doi.org/10.5281/zenodo.1410543> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/dcmitype/Software> <urn:uuid:302aa7d8-d4ca-40c8-ab95-b79d42f9e73f> .
+<https://doi.org/10.5281/zenodo.1410543> <http://purl.org/dc/terms/bibliographicCitation> "Jorrit Poelen, Icaro Alzuru, & Michael Elliott. 2018-2024. Preston: a biodiversity dataset tracker (Version 0.8.6-SNAPSHOT) [Software]. Zenodo. https://doi.org/10.5281/zenodo.1410543"@en <urn:uuid:302aa7d8-d4ca-40c8-ab95-b79d42f9e73f> .
+<urn:uuid:0659a54f-b713-4f86-a917-5be166a14110> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <urn:uuid:302aa7d8-d4ca-40c8-ab95-b79d42f9e73f> .
+<urn:uuid:0659a54f-b713-4f86-a917-5be166a14110> <http://purl.org/dc/terms/description> "A biodiversity dataset graph archive."@en <urn:uuid:302aa7d8-d4ca-40c8-ab95-b79d42f9e73f> .
+<hash://sha256/16f863cc0376a1b5e98fbd814b4e28a367391e915ef6c2f5885ae8677bd7f463> <http://www.w3.org/ns/prov#usedBy> <urn:uuid:302aa7d8-d4ca-40c8-ab95-b79d42f9e73f> <urn:uuid:302aa7d8-d4ca-40c8-ab95-b79d42f9e73f> .
+<hash://sha256/1ed6493e4dcd4172d723dfdf7ab2c06946d6ca43147677c4f5be440a255ccd57> <http://www.w3.org/ns/prov#wasGeneratedBy> <urn:uuid:6a74aba7-b0fc-44b2-8433-ca15116181a5> <urn:uuid:6a74aba7-b0fc-44b2-8433-ca15116181a5> .
+<hash://sha256/1ed6493e4dcd4172d723dfdf7ab2c06946d6ca43147677c4f5be440a255ccd57> <http://www.w3.org/ns/prov#qualifiedGeneration> <urn:uuid:6a74aba7-b0fc-44b2-8433-ca15116181a5> <urn:uuid:6a74aba7-b0fc-44b2-8433-ca15116181a5> .
+<urn:uuid:6a74aba7-b0fc-44b2-8433-ca15116181a5> <http://www.w3.org/ns/prov#generatedAtTime> "2024-06-25T15:15:36.305Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> <urn:uuid:6a74aba7-b0fc-44b2-8433-ca15116181a5> .
+<urn:uuid:6a74aba7-b0fc-44b2-8433-ca15116181a5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Generation> <urn:uuid:6a74aba7-b0fc-44b2-8433-ca15116181a5> .
+<urn:uuid:6a74aba7-b0fc-44b2-8433-ca15116181a5> <http://www.w3.org/ns/prov#wasInformedBy> <urn:uuid:302aa7d8-d4ca-40c8-ab95-b79d42f9e73f> <urn:uuid:6a74aba7-b0fc-44b2-8433-ca15116181a5> .
+<urn:uuid:6a74aba7-b0fc-44b2-8433-ca15116181a5> <http://www.w3.org/ns/prov#used> <http://np.knowledgepixels.com/RAOgLBuvJRusIKPJyhXbx7sMI1aKj_AI0l1oG6XXsO4pU.trig.txt> <urn:uuid:6a74aba7-b0fc-44b2-8433-ca15116181a5> .
+<http://np.knowledgepixels.com/RAOgLBuvJRusIKPJyhXbx7sMI1aKj_AI0l1oG6XXsO4pU.trig.txt> <http://purl.org/pav/hasVersion> <hash://sha256/1ed6493e4dcd4172d723dfdf7ab2c06946d6ca43147677c4f5be440a255ccd57> <urn:uuid:6a74aba7-b0fc-44b2-8433-ca15116181a5> .

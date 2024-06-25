@@ -1,0 +1,56 @@
+@prefix this: <http://purl.org/np/RAOgLBuvJRusIKPJyhXbx7sMI1aKj_AI0l1oG6XXsO4pU> .
+@prefix sub: <http://purl.org/np/RAOgLBuvJRusIKPJyhXbx7sMI1aKj_AI0l1oG6XXsO4pU#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sub:association a <https://w3id.org/biolink/vocab/OrganismTaxonToOrganismTaxonAssociation>;
+    rdfs:comment "Wolf (Canis lupus) predation and scavenging of reintroduced bison (Bison bison): a hallmark of ecological restoration to boreal food webs";
+    <https://w3id.org/biolink/vocab/object> sub:objtaxon;
+    <https://w3id.org/biolink/vocab/predicate> <http://purl.obolibrary.org/obo/RO_0002439>;
+    <https://w3id.org/biolink/vocab/subject> sub:subjtaxon;
+    <https://w3id.org/kpxl/biodiv/terms/hasSubjectLifeCycleStage> <http://purl.obolibrary.org/obo/UBERON_0018241> .
+  
+  sub:objtaxon <https://w3id.org/kpxl/biodiv/terms/hasTaxonName> <https://www.checklistbank.org/dataset/2169/taxon/9901> .
+  
+  sub:subjtaxon <https://w3id.org/kpxl/biodiv/terms/hasTaxonName> <https://www.checklistbank.org/dataset/9880/taxon/QLXL> .
+}
+
+sub:provenance {
+  sub:assertion prov:wasDerivedFrom <https://doi.org/10.1007/s10344-023-01676-0> .
+}
+
+sub:pubinfo {
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCjDGQCS1S+SRnERDuYDXOugdYUP0efEquHJEEHAbU/uLzBVlga89zqrNPCS7fBE6lArBUWEmT8eLKdMapyqvAzI1J3jUWTMhDJF+XFBkUiuiFfNSc4vJJcmi0yujtnuzXsRIG202jyaP4f5ULoskFwaZOSBZJfiE0dsB3D7DTIAQIDAQAB";
+    npx:hasSignature "BmxFhIUMaljf5MGd6ETv/dTclruWtt0knKiiU9wJPKaq1G3ZfTloNVZB6AckOoKivlQDVr8D8qas4enqbRGhWYLV2se7YMsiMg1lTB09WndovUXp9+5lRIy1s0z1nKF4VqBYEfMNuujtYPyQ8X+cDgqpSjZecrX3iqlBcYlGTD0=";
+    npx:hasSignatureTarget this: .
+  
+  this: dct:created "2023-09-15T08:54:31.806Z"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
+    npx:hasNanopubType <https://w3id.org/kpxl/biodiv/terms/BiodivNanopub>;
+    npx:introduces sub:association;
+    rdfs:label "Canis lupus Linnaeus, 1758 (species) - preys on - Bison bison (species)";
+    nt:wasCreatedFromProvenanceTemplate <http://purl.org/np/RAcTpoh5Ra0ssqmcpOgWdaZ_YiPE6demO6cpw-2RvSNs8>;
+    nt:wasCreatedFromPubinfoTemplate <http://purl.org/np/RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM>,
+      <http://purl.org/np/RAh1gm83JiG5M6kDxXhaYT1l49nCzyrckMvTzcPn-iv90>;
+    nt:wasCreatedFromTemplate <http://purl.org/np/RAh16oLqLJKo8I8R2CebR1n8Dwv95KL_H-azFfGt2FGW0> .
+  
+  <https://www.checklistbank.org/dataset/2169/taxon/9901> nt:hasLabelFromApi "Bison bison (species)" .
+  
+  <https://www.checklistbank.org/dataset/9880/taxon/QLXL> nt:hasLabelFromApi "Canis lupus Linnaeus, 1758 (species)" .
+}
